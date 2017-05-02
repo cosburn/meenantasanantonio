@@ -1,46 +1,45 @@
 {
 	"bond": [
 		{
-			"title": 					"Proposition 1: Streets, Bridges, & Sidewalks Improvements",
-			"description":		"This proposition authorizes the City of San Antonio to issue bonds, the proceeds from which will be used to make permanent public improvements to streets, bridges and sidewalks, as well as other improvements necessary or related to the following, including, but not limited to: bicycle lanes, landscaping, relocation of utilities, street lighting, technology improvements and signage. This proposition will also provide acquisition of lands and rights-of-way necessary for such purposes and for the acquiring and installation of public art related to the proposition.",
+			"title": 					"Propuesta 1: Mejoras de Calles, Puentes y Aceras",
+			"description":		"Esta propuesta autoriza a la Ciudad de San Antonio a emitir bonos, cuyos ingresos serán usados para realizar mejoras públicas permanentes a calles, puentes y aceras, al igual que otras mejoras necesarias o relacionadas a lo siguiente, incluyendo, pero no limitándose a: carriles de bicicleta, paisajismo, reubicación de empresas de servicios públicos, iluminación de calles, mejoras en la tecnología y señalizaciones. Esta propuesta también facilitará la adquisición de tierras y de derechos de vía necesarios para tales fines y para la adquisición e instalación de arte público relacionado a la propuesta.",
 			"percent":				"52",
-			"total":					"$445.263 Million",
+			"total":					"$445.263 Millones",
 			"projects":				"64"
 		},
 		{
-			"title":					"Proposition 2: Drainage & Flood Control Improvements",
-			"description":		"This proposition authorizes the City of San Antonio to issue bonds, the proceeds from which will be used to provide drainage and flood water improvements and 
-facilities to be used for the removal of and protection from harmful excess water. This proposition will also provide for the acquisition of lands and rights-of-way necessary for such purposes and for the acquiring and installation of public art related to the proposition.",
+			"title":					"Propuesta 2: Mejoras de Drenaje & Control de Inundaciones",
+			"description":		"Esta propuesta autoriza a la Ciudad de San Antonio a emitir bonos, cuyos ingresos serán usados para proporcionar drenaje y mejoras e instalaciones de aguas de inundación para utilizarse en la remoción de y protección de exceso de agua perjudicial. Esta propuesta también facilitará la adquisición de tierras y de derechos de vía necesarios para tales fines y para la adquisición e instalación de arte público relacionado a la propuesta.",
 			"percent":				"16",
-			"total":					"$138.988 Million",
+			"total":					"$138.988 Millones",
 			"projects":				"19"
 		},
 		{
-			"title":					"Proposition 3: Parks, Recreation, & Open Space Improvements",
-			"description":		"This proposition authorizes the City of San Antonio to issue bonds, the proceeds from which will be used to acquire, construct, equip and renovate various park, recreation and open space venues. This proposition will also provide park additions and for the acquisition of lands and rights-of-way necessary for such purposes and for the acquiring and installation of public art related to the proposition.",
+			"title":					"Propuesta 3: Mejoras de Parques, Lugares de Recreación & Espacios Abiertos",
+			"description":		"Esta propuesta autoriza a la Ciudad de San Antonio a emitir bonos, cuyos ingresos serán usados para adquirir, construir, equipar y renovar diversos parques, lugares de recreación y espacios abiertos. Esta propuesta también facilitará la adquisición de tierras y de derechos de vía necesarios para tales fines y para la adquisición e instalación de arte público relacionado a la propuesta.",
 			"percent":				"22",
-			"total":					"$187.313 Million",
+			"total":					"$187.313 Millones",
 			"projects":				"79"
 		},
 		{
-			"title":					"Proposition 4: Library & Cultural Facilities Improvements",
-			"description":		"This proposition authorizes the City of San Antonio to issue bonds, the proceeds from which will be used to acquire, construct, improve, renovate and equip libraries, cultural facilities or other facilities. This proposition will also provide for the acquisition of lands and rights-of- way necessary for such purposes and for the acquiring and installation of public art related to the proposition.",
+			"title":					"Propuesta 4: Mejoras de Bibliotecas & Instalaciones Culturales",
+			"description":		"Esta propuesta autoriza a la Ciudad de San Antonio a emitir bonos, cuyos ingresos serán usados para adquirir, construir, mejorar, renovar y equipar bibliotecas, instalaciones culturales u otras instalaciones. Esta propuesta también facilitará la adquisición de tierras y de derechos de vía necesarios para tales fines y para la adquisición e instalación de arte público relacionado a la propuesta.",
 			"percent":				"3",
-			"total":					"$24.025 Million",
+			"total":					"$24.025 Millones",
 			"projects":				"13"
 		},
 		{
-			"title":					"Proposition 5: Public Safety Facilities Improvements",
-			"description":		"This proposition authorizes the City of San Antonio to issue bonds, the proceeds from which will be used to acquire, construct, improve, renovate and equip public safety facilities to include fire, police, emergency medical services (EMS), animal control facilities and other facilities promoting the health, safety and welfare of the City’s residents. This proposition will also provide for the acquisition of lands and rights-of-way necessary to accomplish such purposes as well as the acquiring and installation of public art related to the proposition.",
+			"title":					"Propuesta 5: Mejoras de Instalaciones de Seguridad Pública",
+			"description":		"Esta propuesta autoriza a la Ciudad de San Antonio a emitir bonos, cuyos ingresos serán usados para adquirir, construir, mejorar, renovar y equipar instalaciones de seguridad pública para incluir instalaciones de bomberos, policía, servicios de emergencias médicas (EMS, por sus siglas en inglés) y otras instalaciones que promuevan la salud, seguridad y bienestar de los residentes de la ciudad. Esta propuesta también facilitará la adquisición de tierras y de derechos de vía necesarios para tales fines y para la adquisición e instalación de arte público relacionado a la propuesta.",
 			"percent":				"4",
-			"total":					"$34.411 Million",
+			"total":					"$34.411 Millones",
 			"projects":				"5"
 		},
 		{
-			"title":					"Proposition 6: Neighborhood Improvements",
-			"description":		"This proposition authorizes the City of San Antonio to issue bonds, the proceeds from which will be used to: acquire properties within 12 identified Neighborhood Improvement Areas; improve and dispose of acquired property to facilitate private sector development of single- family, multi-family or mixed-use projects; for the purpose of eliminating slum or blight conditions or to prevent the spread of those conditions, consistent with the City’s 2017 Urban Renewal Plan as adopted by the City Council for the City of San Antonio on February 2, 2017. The City will not build housing, but will rely on non-profit and private sector housing developers to do so.",
+			"title":					"Propuesta 6: Mejoras de Vecindarios",
+			"description":		"Esta propuesta autoriza a la Ciudad de San Antonio a emitir bonos, cuyos ingresos serán utilizados para: adquirir propiedades dentro de las 12 Áreas de Mejora de Vecindario identificadas; mejorar y deshacerse de propiedad adquirida para facilitar el desarrollo del sector privado de proyectos unifamiliares, multifamiliares o de uso mixto; con el propósito de eliminar condiciones marginales o de deterioro urbano o para prevenir la propagación de dichas condiciones, consistente con el Plan de Renovación Urbana de la Ciudad 2017 según fue aprobado por el Consejo Municipal para la Ciudad de San Antonio el 2 de febrero de 2017. La Ciudad no construirá viviendas, sino que contará con los desarrolladores de viviendas no lucrativos y del sector privado para hacerlo.",
 			"percent":				"2",
-			"total":					"$20.000 Million",
+			"total":					"$20.000 Millones",
 			"projects":				"TBD"
 		}
 	],

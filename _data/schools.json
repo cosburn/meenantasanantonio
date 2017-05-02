@@ -5,24 +5,24 @@
 		{ "Place 4": ["Margaret Judson","Aimee Voorhies"]}
 	],
 	"San Antonio ISD": [
-		{ "District 1": ["Steve Lechlop","Sandra Ojeda Medina"]},
-		{ "District 3": ["Debra Guerrero","George Hinojosa","Lorna 'Ms. K' Klokkenga"]},
-		{ "District 4": ["Arthur V. Valdez, Jr.","Adela R. Segovia"]},
-		{ "District 7": ["Ed Garza"]},
+		{ "Distrito 1": ["Steve Lechlop","Sandra Ojeda Medina"]},
+		{ "Distrito 3": ["Debra Guerrero","George Hinojosa","Lorna 'Ms. K' Klokkenga"]},
+		{ "Distrito 4": ["Arthur V. Valdez, Jr.","Adela R. Segovia"]},
+		{ "Distrito 7": ["Ed Garza"]},
 	],
 	"Judson ISD": [
-		{ "District 1": ["Suzanne Kenoyer","Michael Holdman"]},
-		{ "District 2": ["Richard LaFoille","Sonny Peter-Merrell"]},
-		{ "District 3": ["Gilbert Flores","Debra Eaton"]},
-		{ "District 4": ["Jose A. Macias, Jr."]},
-		{ "District 5": ["Arnoldo Salinas","Jennifer Rodriguez"]}
+		{ "Distrito 1": ["Suzanne Kenoyer","Michael Holdman"]},
+		{ "Distrito 2": ["Richard LaFoille","Sonny Peter-Merrell"]},
+		{ "Distrito 3": ["Gilbert Flores","Debra Eaton"]},
+		{ "Distrito 4": ["Jose A. Macias, Jr."]},
+		{ "Distrito 5": ["Arnoldo Salinas","Jennifer Rodriguez"]}
 	],
 	"Harlandale ISD": [
-		{ "District 1": ["Juan Mancha"]},
-		{ "District 2": ["Christine Carrillo","Orlando Salazar"]},
-		{ "District 3": ["Esequiel “Zeke” Mendoza"]},
-		{ "District 4": ["David Abundos"]},
-		{ "District 5": ["Josie Scales","Jesus Tejeda"]}
+		{ "Distrito 1": ["Juan Mancha"]},
+		{ "Distrito 2": ["Christine Carrillo","Orlando Salazar"]},
+		{ "Distrito 3": ["Esequiel “Zeke” Mendoza"]},
+		{ "Distrito 4": ["David Abundos"]},
+		{ "Distrito 5": ["Josie Scales","Jesus Tejeda"]}
 	],
 	"Southside ISD": [
 		{ "Position 3": ["Norberto Chavez","Sonny Santos","Ruth S. Arocha"]},
@@ -30,34 +30,34 @@
 		{ "Position 5": ["Anita Reyna","Bruce Alan Brannon"]}
 	],
 	"Northside ISD": [
-		{ "District 5": ["Katie Reed"]},
-		{ "District 6": ["Carol Harle","Paul Gass"]},
-		{ "District 7": ["Karen Freeman","Kurt Rohmeier"]}
+		{ "Distrito 5": ["Katie Reed"]},
+		{ "Distrito 6": ["Carol Harle","Paul Gass"]},
+		{ "Distrito 7": ["Karen Freeman","Kurt Rohmeier"]}
 	]}
 ,
 "districts": [{
-	"District 1": ["Alamo Heights ISD","San Antonio ISD"],
-	"District 2": ["Judson ISD","San Antonio ISD"],
-	"District 3": ["Harlandale ISD","San Antonio ISD","Southside ISD"],
-	"District 4": ["Harlandale ISD","Northside ISD","Southside ISD"],
-	"District 5": ["Harlandale ISD","San Antonio ISD"],
-	"District 6": ["Northside ISD"],
-	"District 7": ["Northside ISD","San Antonio ISD"],
-	"District 8": ["Northside ISD"],
-	"District 9": ["Northside ISD"],
-	"District 10": ["Alamo Heights ISD","Judson ISD"]
+	"Distrito 1": ["Alamo Heights ISD","San Antonio ISD"],
+	"Distrito 2": ["Judson ISD","San Antonio ISD"],
+	"Distrito 3": ["Harlandale ISD","San Antonio ISD","Southside ISD"],
+	"Distrito 4": ["Harlandale ISD","Northside ISD","Southside ISD"],
+	"Distrito 5": ["Harlandale ISD","San Antonio ISD"],
+	"Distrito 6": ["Northside ISD"],
+	"Distrito 7": ["Northside ISD","San Antonio ISD"],
+	"Distrito 8": ["Northside ISD"],
+	"Distrito 9": ["Northside ISD"],
+	"Distrito 10": ["Alamo Heights ISD","Judson ISD"]
 	}],
 "websites": {
 	"Alamo Heights ISD": "http://www.ahisd.net/cms/One.aspx?portalId=8146&pageId=36478",
 	"San Antonio ISD": "https://www.saisd.net/main/index.php?option=com_content&view=article&id=6458&Itemid=0",
 	"Judson ISD": "http://www.judsonisd.org/district/schoolBoard/May062017GeneralElections.cfm",
 	"Handlandale ISD": "http://www.harlandale.net/school_board/elections/",
-	"Southside ISD": "https://www.saisd.net/main/index.php?option=com_content&view=article&id=6458&Itemid=0",
+	"Southside ISD": "https://southsideisd.org/",
 	"Northside ISD": "https://nisd.net/board"
 	},
 "bonds": {
 	"Judson ISD": 			["http://www.judsonisd.org/jblog/archives.cfm/category/bond",""],
-	"Southside ISD": 		["","Voters in Southside ISD will see a $59.8 million bond on their ballots. This bond aims to address growth in the district, with $30.3 million spent on elementary school projects (including a new kindergarten and pre-kindergarten campus), $18.4 million on middle school projects, and $9.4 million on high school projects."],
+	"Southside ISD": 		["https://southsideisd.org/","Hay un bono de $ 59.8 millones. $ 30.3 millones para proyectos de escuelas primarias, $ 18.4 millones para proyectos de escuelas intermedias y $ 9.4 millones para proyectos de escuelas secundarias."],
 	"Alamo Heights ISD": 	["http://www.ahisd.net/news/what_s_new/a_h_i_s_d_bond_2017",""]
 	}
 }

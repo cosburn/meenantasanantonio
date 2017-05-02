@@ -1,14 +1,14 @@
 ---
 layout: page
 bodyClass: outside-sa
-title: Outside City Limits
-permalink: /outside-sa/
+title: Límites Fuera de la Ciudad
+permalink: /fuera-de-sa/
 hero-img: https://www.sa2020.org/wp-content/uploads/2017/03/bg-map-outside-sa.png
 ---
 
-## Don’t live in San Antonio? You can still participate.
+## ¿No vives en San Antonio? Todavía puedes participar.
 
-Select your Bexar County city or municipality for more information on elections in your area.
+Selecciona tu ciudad o municipio del Condado de Bexar para obtener más información sobre las elecciones en tu área.
 
 ---------
 
