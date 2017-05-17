@@ -6,9 +6,9 @@ permalink: /fuera-de-sa/
 hero-img: https://www.sa2020.org/wp-content/uploads/2017/03/bg-map-outside-sa.png
 ---
 
-## ¿No vives en San Antonio? Todavía puedes participar.
+## ¿No vives en San Antonio? Descubre más sobre tu ciudad o municipio.
 
-Selecciona tu ciudad o municipio del Condado de Bexar para obtener más información sobre las elecciones en tu área.
+Selecciona tu ciudad o municipio del Condado de Bexar para obtener más información sobre los oficiales electos en tu área.
 
 ---------
 
