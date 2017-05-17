@@ -13,7 +13,11 @@ layout: default
         <div class="col-md-4 col-sm-4">
           <div class="number-box number-box--district bg-sa-dark-aqua">
             <p class="number-box--number text-sa-white">{{ site.data.stats[page.district]["turnout"] }}</p>
-            <p class="number-box--description text-sa-white">de los votantes registrados en el D{{page.district}} votó en 2015</p>
+            <p class="number-box--description text-sa-white">Número total de votantes en el Distrito 1 en mayo de 2017 
+            {% if page.title == "Distrito 1" %}
+            	<em>(no oficial)</em>
+            {% endif %}
+            </p>
           </div>
         </div>
         <div class="col-md-4 col-sm-4">
@@ -314,21 +318,21 @@ layout: default
 
 
 					<h3>2017 Municipal Bond</h3>
-					<p><strong>Prop. 1 - Streets, Bridges and Sidewalks Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+					<p><strong>Propuesta 1 - Mejoras de Calles, Puentes y Aceras: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
 
-					<p><strong>Prop. 2 - Drainage and Flood Control Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+					<p><strong>Propuesta 2 - Mejoras de Drenaje &amp; Control de Inundaciones: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
 
-					<p><strong>Prop. 3 - Parks, Recreation and Open Space Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+					<p><strong>Propuesta 3 - Mejoras de Parques, Lugares de Recreación &amp; Espacios Abiertos: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
 					
-					<p><strong>Prop. 4 - Library and Cultural Facilities Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+					<p><strong>Propuesta 4 - Mejoras de Bibliotecas & Instalaciones Culturales: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
 					
-					<p><strong>Prop. 5 - Public Safety Facilities Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+					<p><strong>Propuesta 5 - Mejoras de Instalaciones de Seguridad Pública: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
 					
-					<p><strong>Prop. 6 - Neighborhood Improvements: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+					<p><strong>Propuesta 6 - Mejoras de Vecindarios: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
 
 					<div class="spacer-sm"></div>
 
-					<h3>Alamo Colleges Bond</h3>
+					<h3>Bono de Universidades de Álamo</h3>
 					<p><strong>Full Bond: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
 
 					<div class="spacer-sm desktop-hide"></div>
@@ -342,18 +346,12 @@ layout: default
 				<h3>Fechas Importantes</h3>
 
 				<p class="h4 text-primary has-subtitle">Votación Anticipada</p>
-				<p class="has-subtitle"><strong>24 de abril - 2 de mayo</strong></p>
-				<p class="subtitle text-sm">Ubicaciones: <a href="http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations" title="map" onclick="trackOutboundLink('http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations',true,'Early Voting Locations: Map');">Mapa</a> | <a href="https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png" title="download list" onclick="trackOutboundLink('https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png',true,'Early Voting Locations: List');">Lista</a></p>
+				<p class=""><strong>30 de mayo - 6 de junio</strong></p>
+				<!-- <p class="subtitle text-sm">Ubicaciones: <a href="http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations" title="map" onclick="trackOutboundLink('http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations',true,'Early Voting Locations: Map');">Mapa</a> | <a href="https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png" title="download list" onclick="trackOutboundLink('https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png',true,'Early Voting Locations: List');">Lista</a></p> -->
 
 				<p class="h4 text-primary has-subtitle">Día de la Elección</p>
-				<p class="subtitle"><strong>6 de mayo</strong></p>
-				<!-- <a class="subtitle" href="#">Find your polling place ></a> -->
-
-				<p class="h4 text-primary has-subtitle">La fecha límite para registrarse para votar en la segunda vuelta electoral</p>
-				<p class="subtitle"><strong>11 de mayo</strong></p>
-
-				<p class="h4 text-primary has-subtitle">La segunda vuelta electoral</p>
 				<p class="subtitle"><strong>10 de junio</strong></p>
+				<!-- <a class="subtitle" href="#">Find your polling place ></a> -->
 
 				<hr />
 
@@ -361,7 +359,7 @@ layout: default
 				<div class="resources-list">
 					<h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-align-left" aria-hidden="true"></i> LEER</h4>
 					<ul class="unstyled">
-						<li><a href="http://thinkvoting.com/the-voting-app/" title="La Aplicación de Votación" target="_blank" onclick="trackOutboundLink('http://thinkvoting.com/the-voting-app/',true,'The Voting App');">La Aplicación de Votación</a></li>
+						<!-- <li><a href="http://thinkvoting.com/the-voting-app/" title="La Aplicación de Votación" target="_blank" onclick="trackOutboundLink('http://thinkvoting.com/the-voting-app/',true,'The Voting App');">La Aplicación de Votación</a></li> -->
 						<li><a href="http://www.bexar.org/DocumentCenter/View/4570" title="Descarga una Boleta Electoral de Muestra" target="_blank" onclick="trackOutboundLink('http://www.bexar.org/DocumentCenter/View/4570',true,'Download Sample Ballot');">Descargar Muestra de Boleta Electoral</a></li>
 					</ul>
 
@@ -369,7 +367,7 @@ layout: default
 					<h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-rocket" aria-hidden="true"></i> HACER</h4>
 					<ul class="unstyled">
 						<li><a href="http://www.votetexas.gov/?page_id=548" title="Lleva Esto Contigo para Votar" target="_blank" onclick="trackOutboundLink('http://www.votetexas.gov/?page_id=548',true,'Bring these with you to vote');">Lleva Esto Contigo para Votar</a></li>
-						<li><a href="https://webservices.sos.state.tx.us/vrapp/index.asp" title="Regístrate: Descarga e Imprime la Solicitud que se Enviará por Correo – tienes hasta el 6 de Abril" target="_blank" onclick="trackOutboundLink('https://webservices.sos.state.tx.us/vrapp/index.asp',true,'Registration Application');">Regístrate: Descarga e Imprime la Solicitud que se Enviará por Correo – tienes hasta el 6 de Abril</a></li>
+						<!-- <li><a href="https://webservices.sos.state.tx.us/vrapp/index.asp" title="Regístrate: Descarga e Imprime la Solicitud que se Enviará por Correo – tienes hasta el 6 de Abril" target="_blank" onclick="trackOutboundLink('https://webservices.sos.state.tx.us/vrapp/index.asp',true,'Registration Application');">Regístrate: Descarga e Imprime la Solicitud que se Enviará por Correo – tienes hasta el 6 de Abril</a></li> -->
 						<li><a href="https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio" title="Comprueba Tu Registro" target="_blank" onclick="trackOutboundLink('https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio',true,'Check Your Registration');">Comprueba Tu Registro</a></li>
 						<li><a href="http://www.saspeakup.com/" title="Expresa Tus Prioridades de Presupuesto de la Ciudad de San Antonio para el 2017 y Habla Fuerte SA" target="_blank" onclick="trackOutboundLink('http://www.saspeakup.com/',true,'Voice Your 2018 City of San Antonio Budget Priorities');">Expresa Tus Prioridades de Presupuesto de la Ciudad de San Antonio para el 2018 y Habla Fuerte SA</a></li>
 					</ul>
