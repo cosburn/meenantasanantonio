@@ -89,10 +89,10 @@ layout: default
 								</div>
 								<div class="row">
 									<div class="col-sm-12">
-										<p class="progress-title text-xsm">General election results: {{ candidate.votePercent }}%</p>
+										<p class="progress-title text-xsm">Resultados de la Elección General: {{ candidate.votePercent }}%</p>
 										<div class="progress">
 										  <div class="progress-bar bg-sa-dark-aqua" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{ candidate.votePercent }}%;">
-										    	{{ candidate.votes }} votes
+										    	{{ candidate.votes }} votos
 										  </div>
 										</div>
 									</div>
@@ -155,10 +155,10 @@ layout: default
 
 								<div class="row">
 									<div class="col-sm-12">
-										<p class="progress-title text-xsm">General election results: {{ candidate.votePercent }}%</p>
+										<p class="progress-title text-xsm">Resultados de la Elección General: {{ candidate.votePercent }}%</p>
 										<div class="progress">
 										  <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{ candidate.votePercent }}%;">
-										    	{{ candidate.votes }} votes
+										    	{{ candidate.votes }} votos
 										  </div>
 										</div>
 									</div>
@@ -263,7 +263,7 @@ layout: default
 
 				<div class="spacer-sm hidden-mobile"></div>
 				<div class="">
-					<h2 class="">General Election Results</h2>
+					<h2 class="">Resultados de la Elección General</h2>
 					<hr />
 
 					{% assign councilCandidates = site.data.candidates[page.district] %}
@@ -271,7 +271,7 @@ layout: default
 					{% if length == 1 %}
 						
 					{% for candidate in councilCandidates %}
-					<h3 class="">{{ page.title }} City Council</h3>
+					<h3 class="">Miembros del Consejo Municipal</h3>
 					<div class="row">
 						<div class="col-sm-3">
 							{% if candidate.photo != "" %}
@@ -282,10 +282,10 @@ layout: default
 						</div>
 						<div class="col-sm-6">
 							<h4 class="has-subtitle">{{ candidate.name }} <strong><span class="text-sa-dark-aqua"><i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></h4>
-							<p class="progress-title text-xsm">Election results: {{ candidate.votePercent }}%</p>
+							<p class="progress-title text-xsm">Resultados de la Elección: {{ candidate.votePercent }}%</p>
 							<div class="progress">
 							  <div class="progress-bar bg-sa-dark-aqua" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{ candidate.votePercent }}%;">
-							    	{{ candidate.votes }} votes
+							    	{{ candidate.votes }} votos
 							  </div>
 							</div>
 							<!-- <div class="">
@@ -317,23 +317,23 @@ layout: default
 					{% endif %}
 
 
-					<h3>2017 Municipal Bond</h3>
-					<p><strong>Propuesta 1 - Mejoras de Calles, Puentes y Aceras: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+					<h3>Bono Municipal 2017</h3>
+					<p><strong>Propuesta 1 - Mejoras de Calles, Puentes y Aceras: <span class="text-sa-dark-aqua">Aprobada <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
 
-					<p><strong>Propuesta 2 - Mejoras de Drenaje &amp; Control de Inundaciones: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+					<p><strong>Propuesta 2 - Mejoras de Drenaje &amp; Control de Inundaciones: <span class="text-sa-dark-aqua">Aprobada <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
 
-					<p><strong>Propuesta 3 - Mejoras de Parques, Lugares de Recreación &amp; Espacios Abiertos: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+					<p><strong>Propuesta 3 - Mejoras de Parques, Lugares de Recreación &amp; Espacios Abiertos: <span class="text-sa-dark-aqua">Aprobada <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
 					
-					<p><strong>Propuesta 4 - Mejoras de Bibliotecas & Instalaciones Culturales: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+					<p><strong>Propuesta 4 - Mejoras de Bibliotecas &amp; Instalaciones Culturales: <span class="text-sa-dark-aqua">Aprobada <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
 					
-					<p><strong>Propuesta 5 - Mejoras de Instalaciones de Seguridad Pública: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+					<p><strong>Propuesta 5 - Mejoras de Instalaciones de Seguridad Pública: <span class="text-sa-dark-aqua">Aprobada <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
 					
-					<p><strong>Propuesta 6 - Mejoras de Vecindarios: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+					<p><strong>Propuesta 6 - Mejoras de Vecindarios: <span class="text-sa-dark-aqua">Aprobada <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
 
 					<div class="spacer-sm"></div>
 
 					<h3>Bono de Universidades de Álamo</h3>
-					<p><strong>Full Bond: <span class="text-sa-dark-aqua">Passed <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
+					<p><strong>Bono Completo: <span class="text-sa-dark-aqua">Aprobada <i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></p>
 
 					<div class="spacer-sm desktop-hide"></div>
 
@@ -346,25 +346,25 @@ layout: default
 				<h3>Fechas Importantes</h3>
 
 				<p class="h4 text-primary has-subtitle">Votación Anticipada</p>
-				<p class=""><strong>30 de mayo - 6 de junio</strong></p>
-				<!-- <p class="subtitle text-sm">Ubicaciones: <a href="http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations" title="map" onclick="trackOutboundLink('http://nowcastsa.com/blogs/heather-dimasi/map-where-find-early-voting-polling-locations',true,'Early Voting Locations: Map');">Mapa</a> | <a href="https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png" title="download list" onclick="trackOutboundLink('https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png',true,'Early Voting Locations: List');">Lista</a></p> -->
+				<p class="has-subtitle"><strong>30 de mayo - 6 de junio</strong></p>
+				<p class="subtitle text-sm">Ubicaciones: <a href="http://www.sa2020.org/wp-content/uploads/2017/05/2017-June-Runoff-Early-Voting.png" title="map" onclick="trackOutboundLink('http://www.sa2020.org/wp-content/uploads/2017/05/2017-June-Runoff-Early-Voting.png',true,'Early Voting Locations: Map');">Lista</a><!-- | <a href="https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png" title="download list" onclick="trackOutboundLink('https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png',true,'Early Voting Locations: List');">Lista</a></p> -->
 
 				<p class="h4 text-primary has-subtitle">Día de la Elección</p>
-				<p class="subtitle"><strong>10 de junio</strong></p>
-				<!-- <a class="subtitle" href="#">Find your polling place ></a> -->
+				<p class="has-subtitle"><strong>10 de junio</strong></p>
+				<p class="subtitle text-sm"><a class="" href="https://www.bexar.org/2231/Who-represents-me-Search" target="_blank" title="find your precint" onclick="trackOutboundLink('https://www.bexar.org/2231/Who-represents-me-Search',true,'Find your polling place');">Encuentra el lugar de votación de tu recinto</a></p>
 
 				<hr />
 
 				<h3 class="">Recursos</h3>
 				<div class="resources-list">
-					<h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-align-left" aria-hidden="true"></i> LEER</h4>
-					<ul class="unstyled">
+					<!-- <h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-align-left" aria-hidden="true"></i> LEER</h4>
+					<ul class="unstyled"> -->
 						<!-- <li><a href="http://thinkvoting.com/the-voting-app/" title="La Aplicación de Votación" target="_blank" onclick="trackOutboundLink('http://thinkvoting.com/the-voting-app/',true,'The Voting App');">La Aplicación de Votación</a></li> -->
-						<li><a href="http://www.bexar.org/DocumentCenter/View/4570" title="Descarga una Boleta Electoral de Muestra" target="_blank" onclick="trackOutboundLink('http://www.bexar.org/DocumentCenter/View/4570',true,'Download Sample Ballot');">Descargar Muestra de Boleta Electoral</a></li>
-					</ul>
+						<!-- <li><a href="http://www.bexar.org/DocumentCenter/View/4570" title="Descarga una Boleta Electoral de Muestra" target="_blank" onclick="trackOutboundLink('http://www.bexar.org/DocumentCenter/View/4570',true,'Download Sample Ballot');">Descargar Muestra de Boleta Electoral</a></li> -->
+					<!-- </ul> -->
 
 
-					<h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-rocket" aria-hidden="true"></i> HACER</h4>
+					<!-- <h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-rocket" aria-hidden="true"></i> HACER</h4> -->
 					<ul class="unstyled">
 						<li><a href="http://www.votetexas.gov/?page_id=548" title="Lleva Esto Contigo para Votar" target="_blank" onclick="trackOutboundLink('http://www.votetexas.gov/?page_id=548',true,'Bring these with you to vote');">Lleva Esto Contigo para Votar</a></li>
 						<!-- <li><a href="https://webservices.sos.state.tx.us/vrapp/index.asp" title="Regístrate: Descarga e Imprime la Solicitud que se Enviará por Correo – tienes hasta el 6 de Abril" target="_blank" onclick="trackOutboundLink('https://webservices.sos.state.tx.us/vrapp/index.asp',true,'Registration Application');">Regístrate: Descarga e Imprime la Solicitud que se Enviará por Correo – tienes hasta el 6 de Abril</a></li> -->
