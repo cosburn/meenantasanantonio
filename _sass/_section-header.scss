@@ -3,8 +3,9 @@
 \*------------------------------------*/
 
 header {
-	border-bottom: 2px solid col(light-gray);
-	padding: 10px 0;
+	// border-bottom: 2px solid col(light-gray);
+	padding: 15px;
+	height: 60px;
 	position: relative;
 	.site-title {
 		float: left;
@@ -25,6 +26,7 @@ header {
 		.site-title-sub {}
 	}
 	@media screen and (max-width: 600px) {
+		height: 90px;
 		.site-title .site-title-main {
 			@include font-size(3);
 			// float: none;

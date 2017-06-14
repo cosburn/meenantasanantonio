@@ -13,10 +13,7 @@ layout: default
         <div class="col-md-4 col-sm-4">
           <div class="number-box number-box--district bg-sa-dark-aqua">
             <p class="number-box--number text-sa-white">{{ site.data.stats[page.district]["turnout"] }}</p>
-            <p class="number-box--description text-sa-white">Número total de votantes en el Distrito 1 en mayo de 2017 
-            {% if page.title == "Distrito 1" %}
-            	<em>(no oficial)</em>
-            {% endif %}
+            <p class="number-box--description text-sa-white">Número total de votantes en el Distrito 1 en junio de 2017
             </p>
           </div>
         </div>
@@ -42,229 +39,60 @@ layout: default
 		<div class="row">
 			<div class="col-md-8">
 				<!-- <div class="addthis_inline_share_toolbox pull-right clearfix"></div> -->
+					
+				<div class="">
+					<h2 class="">Resultados de la Segunda Vuelta</h2>
+					<hr />
 
-				<h2 class="">¿Qué hay en la boleta electoral?</h2>
-				<hr />
-				<div class="ballot-box ballot-box--mayor">
 					{% assign mayorCandidates = site.data.candidates["mayor"] %}
 					<h3 class="">Alcalde</h3>
-					<p>El Alcalde de San Antonio trabaja estrechamente con el Consejo Municipal para aprobar leyes y crear políticas para la ciudad, al igual que con el Administrador Municipal, quien sirve como el administrador en jefe de la ciudad. Mientras que los miembros del consejo municipal son electos por distrito, el Alcalde representa a todo San Antonio (por un mandato de dos años, con un límite de mandato de cuatro años). Los candidatos se muestran aquí como aparecerán en la boleta electoral. Toda la información compartida es información pública.
-					</p>
-					<p class="text-med"><strong>Candidatos: {{ mayorCandidates|size }}</strong></p>
-					
 					<div class="row">
-						{% for candidate in mayorCandidates %}
-						<div class="col-md-6">
-							<div class="option-box option-box--candidate">
-								<div class="row">
-									<div class="col-sm-6">
-										{% if candidate.photo != "" %}
-										<img class="responsive" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
-										{% else %}
-										<img class="responsive mobile-hide" src="/img/candidates/no-photo.png" alt="no photo provided" />
-										{% endif %}
-									</div>
-									<div class="col-sm-6">
-										<h4 class="">{{ candidate.name }}</h4>
-										<div class="">
-											{% if candidate.website != "" %}
-											<a class="text-sm underline" target="_blank" href="{{ candidate.website }}" title="view website" onclick="trackOutboundLink('{{ candidate.website }}', true, '{{ candidate.name }} Website');">Sitio Web</a>
-											{% endif %}
-											{% if candidate.filing != ""  %}
-											<br /><a class="text-sm underline" target="_blank" href="{{ candidate.filing }}" title="view filing document" onclick="trackOutboundLink('{{ candidate.filing }}', true, '{{ candidate.name }} Filing');">Presentación de Documento</a>
-											{% endif %}
-										</div>
-										<div class="social-icons">
-											{% if candidate.fb != ""  %}
-											<a class="text-xl" target="_blank" href="{{ candidate.fb }}" title="view facebook page" onclick="trackOutboundLink('{{ candidate.fb }}', true, '{{ candidate.name }} Facebook');"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-											{% endif %}
-											{% if candidate.twitter != ""  %}
-											<a class="text-xl" target="_blank" href="{{ candidate.twitter }}" title="view twitter page" onclick="trackOutboundLink('{{ candidate.twitter }}', true, '{{ candidate.name }} Twitter');"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-											{% endif %}
-											{% if candidate.instagram != ""  %}
-											<a class="text-xl" target="_blank" href="{{ candidate.instagram }}" title="view instagram" onclick="trackOutboundLink('{{ candidate.instagram }}', true, '{{ candidate.name }} Instagram');"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-											{% endif %}
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-sm-12">
-										<p class="progress-title text-xsm">Resultados de la Elección General: {{ candidate.votePercent }}%</p>
-										<div class="progress">
-										  <div class="progress-bar bg-sa-dark-aqua" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{ candidate.votePercent }}%;">
-										    	{{ candidate.votes }} votos
-										  </div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						{% endfor %}
-					</div>
-				</div><!--./ballot-box -->
-
-
-				{% assign councilCandidates = site.data.candidates[page.district] %}
-				{% assign length = councilCandidates | size %}
-				{% if length > 1 %}
-
-				<div class="spacer-sm"></div>
-
-				<div class="ballot-box ballot-box--council">
-					<h3>Miembros del Consejo Municipal</h3>
-					<p>La Ciudad de San Antonio se divide en 10 distritos, y cada distrito elige un representante para el Consejo Municipal (por un mandato de dos años, con un límite de mandato de cuatro años). En conjunto, el Consejo Municipal crea políticas y aprueba leyes sobre servicios municipales, proyectos de mejoras de capital, uso y desarrollo de tierras, desarrollo económico, y otros asuntos de la Ciudad. Los candidatos se muestran aquí como aparecerán en la boleta electoral. Toda la información compartida es información pública.
-					</p>
-					<p class="text-med"><strong>Candidatos: {{ councilCandidates|size }}</strong></p>
+					{% assign mayorCandidates = site.data.candidates["mayor"] %}
 					
-					<div class="row">
-						{% for candidate in councilCandidates %}
-						<div class="col-md-6">
-							<div class="option-box option-box--candidate">
-								<div class="row">
-									<div class="col-sm-6">
-										{% if candidate.photo != "" %}
-										<img class="responsive" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
-										{% else %}
-										<img class="responsive mobile-hide" src="/img/candidates/no-photo.png" alt="no photo provided" />
-										{% endif %}
-									</div><!--./col-sm-3-->
-									<div class="col-sm-6">
-										<h4 class="">{{ candidate.name }}</h4>
-										<div class="">
-											{% if candidate.website != "" %}
-											<a class="text-sm underline" target="_blank" href="{{ candidate.website }}" title="view website" onclick="trackOutboundLink('{{ candidate.website }}', true, '{{ candidate.name }} Website');">Sitio Web</a>
-											{% endif %}
-											{% if candidate.filing != ""  %}
-											<br /><a class="text-sm underline" target="_blank" href="{{ candidate.filing }}" title="view filing document" onclick="trackOutboundLink('{{ candidate.filing }}', true, '{{ candidate.name }} Filing');">Presentación de Documento</a>
-											{% endif %}
-										</div>
-										<div class="social-icons">
-											{% if candidate.fb != ""  %}
-											<a class="text-xl" target="_blank" href="{{ candidate.fb }}" title="view facebook page" onclick="trackOutboundLink('{{ candidate.fb }}', true, '{{ candidate.name }} Facebook');"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-											{% endif %}
-											{% if candidate.twitter != ""  %}
-											<a class="text-xl" target="_blank" href="{{ candidate.twitter }}" title="view twitter page" onclick="trackOutboundLink('{{ candidate.twitter }}', true, '{{ candidate.name }} Twitter');"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-											{% endif %}
-											{% if candidate.instagram != ""  %}
-											<a class="text-xl" target="_blank" href="{{ candidate.instagram }}" title="view instagram" onclick="trackOutboundLink('{{ candidate.instagram }}', true, '{{ candidate.name }} Instagram');"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-											{% endif %}
-										</div>
-									</div><!--./col-sm-9-->
-								</div><!--./row-->
+					{% assign mayorLength = mayorCandidates | size %}
 
-								<div class="row">
-									<div class="col-sm-12">
-										<p class="progress-title text-xsm">Resultados de la Elección General: {{ candidate.votePercent }}%</p>
-										<div class="progress">
-										  <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{ candidate.votePercent }}%;">
-										    	{{ candidate.votes }} votos
-										  </div>
-										</div>
-									</div>
-								</div>
-							</div><!--./option-box candidate-->
-						</div>
-						{% endfor %}
-					</div><!--./councilCollapse -->
-				</div><!--./ballot-box -->
+					{% for candidate in mayorCandidates %}
 
-				{% endif %}
-
-				<!-- <div class="ballot-box ballot-box--bond">
-					{% assign bondProps = site.data.bond["bond"] %}
-					{% assign bondTotal = site.data.bond["districtTotals"][page.district] %}
-
-
-					<h3>Bono 2017</h3>
-					<p>Un bono municipal le permite a una ciudad pedir dinero prestado para financiar proyectos públicos y mejoras. El Programa de Bonos de San Antonio para 2017 tiene un total de $850 millones y consiste en 6 propuestas (calles; drenaje y control de inundaciones; parques, recreación, y espacios abiertos; bibliotecas e instalaciones culturales; instalaciones de seguridad pública; y vecindarios), con proyectos predeterminados desarrollados por un comité de miembros de la comunidad. 
-					<p/>
-					<p>En la boleta electoral, podrás votar tanto A FAVOR como EN CONTRA de cada Propuesta individualmente.</p>
-					<p><strong>Datos curiosos:</strong> no habrá aumentos en el impuesto sobre bienes inmuebles como parte del Bono 2017, y todo ciudadano de San Antonio vive o trabaja a una milla de algún proyecto de Bonos planeado. ((¡Encuentra el tuyo en <a href="https://qagis.sanantonio.gov/tci/proposedbonds2017/" title="bond project map" target="_blank" onclick="trackOutboundLink('https://qagis.sanantonio.gov/tci/proposedbonds2017/', true, 'Bond Project Map');">este mapa!</a>)
-					</p>
-					<p class="underline"><a href="http://www.sanantonio.gov/2017Bond/InfoGuide" title="Mira una guía completa a todos los proyectos de bonos aquí." target="_blank" onclick="trackOutboundLink('http://www.sanantonio.gov/2017Bond/InfoGuide', true, '2017 Bond Guide');">Mira una guía completa a todos los proyectos de bonos aquí.</a></p>
-
-					<p><a class="show-hide" role="button" data-toggle="collapse" href="#bondCollapse" aria-expanded="false" aria-controls="bondCollapse" onclick="trackInboundLink('Show/Hide','Show/Hide Bond Propositions');"><i class="fa fa-caret-down text-med" aria-hidden="true"></i> <span class="toggle-text">Mostrar</span> Propuestas de Bonos</a>
-					</p>
-					
-					<div class="collapse" id="bondCollapse">
-						{% for prop in bondProps %}
-						<div class="option-box option-box--bond">
-							<h5>{{ prop.title }}</h5>
-							<p class="text-sm">{{ prop.description }}</p>
-							<p>Total asignado: <span class="bg-cause-civic bond-percent">{{ prop.total }}</span></p>
-							<p>Porcentaje de bono total: <span class="bg-cause-civic bond-percent">{{ prop.percent }}%</span></p>
-							<p>Número de proyectos: <span class="bg-cause-civic bond-percent">{{ prop.projects }}</span></p>
-						</div>
-						{% endfor %}
+					<div class="col-sm-3">
+						{% if candidate.photo != "" %}
+						<img class="responsive district-page-results" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
+						{% else %}
+						<img class="responsive mobile-hide" src="/img/candidates/no-photo.png" alt="no photo provided" />
+						{% endif %}
 					</div>
-				</div> --><!--./ballot-box -->
+					<div class="col-sm-6">
+						<h4 class="has-subtitle">{{ candidate.name }} <strong><span class="text-sa-dark-aqua"><i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></h4>
+						<p class="progress-title text-xsm">Resultados de la Segunda Vuelta: {{ candidate.votePercent }}%</p>
+						<div class="progress">
+						  <div class="progress-bar bg-sa-dark-aqua" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{ candidate.votePercent }}%;">
+						    	{{ candidate.votes }} votos
+						  </div>
+						</div>
+						<!-- <div class="">
+							{% if candidate.website != "" %}
+							<a class="text-sm underline" target="_blank" href="{{ candidate.website }}" title="view website" onclick="trackOutboundLink('{{ candidate.website }}', true, '{{ candidate.name }} Website');">Website</a>
+							{% endif %}
+							{% if candidate.filing != ""  %}
+							| <a class="text-sm underline" target="_blank" href="{{ candidate.filing }}" title="view filing document" onclick="trackOutboundLink('{{ candidate.filing }}', true, '{{ candidate.name }} Filing');">Filing Document</a>
+							{% endif %}
+						</div> -->
+						<div class="social-icons">
+							{% if candidate.fb != ""  %}
+							<a class="text-xl" target="_blank" href="{{ candidate.fb }}" title="view facebook page" onclick="trackOutboundLink('{{ candidate.fb }}', true, '{{ candidate.name }} Facebook');"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+							{% endif %}
+							{% if candidate.twitter != ""  %}
+							<a class="text-xl" target="_blank" href="{{ candidate.twitter }}" title="view twitter page" onclick="trackOutboundLink('{{ candidate.twitter }}', true, '{{ candidate.name }} Twitter');"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+							{% endif %}
+							{% if candidate.instagram != ""  %}
+							<a class="text-xl" target="_blank" href="{{ candidate.instagram }}" title="view instagram" onclick="trackOutboundLink('{{ candidate.instagram }}', true, '{{ candidate.name }} Instagram');"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							{% endif %}
+						</div>
+					</div>
 
-				<!-- <div class="ballot-box ballot-box--ac-bond">
-					<h3>Bono de Universidades de Álamo</h3>
-					<p>El Bono de Universidades de Álamo es un paquete de $450 millones para mejoras para todas las escuelas del Distrito de Universidades de Álamo ubicadas por toda la ciudad. El bono también financiará nuevas instalaciones para apoyar las prioridades educativas de San Antonio y en anticipación del continuo crecimiento poblacional. Al igual que el Bono Municipal de San Antonio para 2017, el Bono de Universidades de Álamo no requerirá un aumento al impuesto sobre bienes inmuebles. Por obtener una guía sobre este bono, haz clic aquí.
-					</p>
-					<p><a class="underline" href="http://www.alamo.edu/Bond/" title="Mira una guía completa a todos los proyectos de bonos aquí." target="_blank" onclick="trackOutboundLink('http://www.alamo.edu/Bond/', true, 'View Alamo Colleges Bond Guide');">Mira una guía completa a todos los proyectos de bonos aquí.</a></p>
+					{% endfor %}
 				</div>
 
-				<div class="ballot-box ballot-box--schools">
-					{% assign schools = site.data.schools["candidates"] %}
-					{% assign district = page.title %}
-					{% assign districtSchools = site.data.schools["districts"][0][page.title] %}
-
-					<h3>Junta Escolar</h3>
-					<p>Cada distrito escolar de San Antonio está regido por una junta escolar integrada por residentes del distrito electos. Estos miembros de la junta - o consejeros – crean políticas para el distrito escolar, adoptan presupuestos anuales y establecen tasas de impuestos, informan el progreso del distrito al público, y mucho más.</p>
-					<p>Los distritos escolares se subdividen por distritos (o posiciones o lugares), y los residentes votan por un representante de su distrito. Los distritos escolares se solapan en varios Distritos del Consejo Municipal, entonces si no estás seguro en cuál de los siguientes distritos vives, <a class="underline" href="https://www.bexar.org/2231/Precinct-Finder" title="puedes introducir tu información aquí y averiguarlo." target="_blank">puedes introducir tu información aquí y averiguarlo.</a></p>
-					</p>
-					<p><a class="show-hide show" role="button" data-toggle="collapse" href="#schoolsCollapse" aria-expanded="false" aria-controls="bondCollapse" onclick="trackInboundLink('Show/Hide','Show/Hide School Board Candidates');"><i class="fa fa-caret-down text-med" aria-hidden="true"></i> <span class="toggle-text">Mostrar</span>  Candidatos de la Junta Escolar</a></p>
-					
-					<div class="collapse" id="schoolsCollapse">
-						{% for school in districtSchools %}
-						{% assign candidates = schools[school] %}
-						<div class="option-box option-box--schools">
-							{% assign website = site.data.schools["websites"][school] %}
-							{% if site.data.schools["bonds"][school] %}
-								{% assign bondInfo = site.data.schools["bonds"][school] %}
-							{% else %}
-								{% assign bondInfo = "" %}
-							{% endif %}
-							<p class="h4 has-subtitle">{{ school }}</p>
-							<a href="{{ website }}" target="_blank" class="text-sm subtitle" title="Sitio Web" onclick="trackOutboundLink('{{ website }}', true, '{{ school }} Website');">Ver Sitio Web</a>
-							{% if bondInfo != "" %}
-								<p class="has-subtitle"><strong>{{ school }} tiene un bono en la próxima votación.</strong></p>
-								{% if bondInfo[1] != "" %}
-								{% assign bondBlurb = bondInfo[1] %}
-								<p class="text-sm">{{ bondBlurb }}</p>
-								{% endif %}
-								{% if bondInfo[0] != "" %}
-								{% assign bondWebsite = bondInfo[0] %}
-								<p class="text-sm subtitle"><a target="_blank" href="{{ bondWebsite }}" title="Aprende más">Aprende más</a></p>
-								{% endif %}
-							{% endif %}
-
-							<ul class="unstyled">
-								{% for candidate_hash in candidates %}
-								{% for candidate in candidate_hash %}
-								<li><strong>{{ candidate[0] }}</strong>
-									<ul class="unstyled">
-										{% for name in candidate[1] %}
-										<li>{{ name }}</li>
-										{% endfor %}
-									</ul>
-								</li>
-								{% endfor %}
-								{% endfor %}
-							</ul>
-						</div>
-						{% endfor %}
-					</div>
-				</div> --><!--./ballot-box -->
-
-
-				<div class="spacer-sm hidden-mobile"></div>
-				<div class="">
-					<h2 class="">Resultados de la Elección General</h2>
-					<hr />
+				<div class="spacer-sm"></div>
 
 					{% assign councilCandidates = site.data.candidates[page.district] %}
 					{% assign length = councilCandidates | size %}
@@ -275,27 +103,29 @@ layout: default
 					<div class="row">
 						<div class="col-sm-3">
 							{% if candidate.photo != "" %}
-							<img class="responsive" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
+							<img class="responsive district-page-results" src="{{ candidate.photo }}" alt="{{ candidate.name }} photo" />
 							{% else %}
-							<img class="responsive mobile-hide" src="/img/candidates/no-photo.png" alt="no photo provided" />
+							<img class="responsive district-page-results mobile-hide" src="/img/candidates/no-photo.png" alt="no photo provided" />
 							{% endif %}
 						</div>
 						<div class="col-sm-6">
 							<h4 class="has-subtitle">{{ candidate.name }} <strong><span class="text-sa-dark-aqua"><i class="fa fa-check-square-o" aria-hidden="true"></i></strong></span></strong></h4>
-							<p class="progress-title text-xsm">Resultados de la Elección: {{ candidate.votePercent }}%</p>
+
+							<div class="">
+								{% if candidate.cityLink != "" %}
+								<a class="text-sm underline subtitle" target="_blank" href="{{ candidate.cityLink }}" title="view city webpage" onclick="trackOutboundLink('{{ candidate.cityLink }}', true, '{{ candidate.name }} City Page');">Conoce más sobre {{candidate.name}}</a>
+								{% endif %}
+								{% if candidate.phone != "" %}
+								<p class="text-sm">Contacta a la oficina: {{ candidate.phone }}</p>
+								{% endif %}
+							</div>
+
+							<p class="progress-title text-xsm">Resultados de la Segunda Vuelta: {{ candidate.votePercent }}%</p>
 							<div class="progress">
 							  <div class="progress-bar bg-sa-dark-aqua" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{ candidate.votePercent }}%;">
 							    	{{ candidate.votes }} votos
 							  </div>
 							</div>
-							<!-- <div class="">
-								{% if candidate.website != "" %}
-								<a class="text-sm underline" target="_blank" href="{{ candidate.website }}" title="view website" onclick="trackOutboundLink('{{ candidate.website }}', true, '{{ candidate.name }} Website');">Website</a>
-								{% endif %}
-								{% if candidate.filing != ""  %}
-								| <a class="text-sm underline" target="_blank" href="{{ candidate.filing }}" title="view filing document" onclick="trackOutboundLink('{{ candidate.filing }}', true, '{{ candidate.name }} Filing');">Filing Document</a>
-								{% endif %}
-							</div> -->
 							<div class="social-icons">
 								{% if candidate.fb != ""  %}
 								<a class="text-xl" target="_blank" href="{{ candidate.fb }}" title="view facebook page" onclick="trackOutboundLink('{{ candidate.fb }}', true, '{{ candidate.name }} Facebook');"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
@@ -343,38 +173,6 @@ layout: default
 
 			<div class="col-md-3 col-md-offset-1">
 
-				<h3>Fechas Importantes</h3>
-
-				<p class="h4 text-primary has-subtitle">Votación Anticipada</p>
-				<p class="has-subtitle"><strong>30 de mayo - 6 de junio</strong></p>
-				<p class="subtitle text-sm">Ubicaciones: <a href="http://www.sa2020.org/wp-content/uploads/2017/05/2017-June-Runoff-Early-Voting.png" title="map" onclick="trackOutboundLink('http://www.sa2020.org/wp-content/uploads/2017/05/2017-June-Runoff-Early-Voting.png',true,'Early Voting Locations: Map');">Lista</a><!-- | <a href="https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png" title="download list" onclick="trackOutboundLink('https://www.sa2020.org/wp-content/uploads/2017/03/2017-May-Early-Voting.png',true,'Early Voting Locations: List');">Lista</a></p> -->
-
-				<p class="h4 text-primary has-subtitle">Día de la Elección</p>
-				<p class="has-subtitle"><strong>10 de junio</strong></p>
-				<p class="subtitle text-sm"><a class="" href="https://www.bexar.org/2231/Who-represents-me-Search" target="_blank" title="find your precint" onclick="trackOutboundLink('https://www.bexar.org/2231/Who-represents-me-Search',true,'Find your polling place');">Encuentra el lugar de votación de tu recinto</a></p>
-
-				<hr />
-
-				<h3 class="">Recursos</h3>
-				<div class="resources-list">
-					<!-- <h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-align-left" aria-hidden="true"></i> LEER</h4>
-					<ul class="unstyled"> -->
-						<!-- <li><a href="http://thinkvoting.com/the-voting-app/" title="La Aplicación de Votación" target="_blank" onclick="trackOutboundLink('http://thinkvoting.com/the-voting-app/',true,'The Voting App');">La Aplicación de Votación</a></li> -->
-						<!-- <li><a href="http://www.bexar.org/DocumentCenter/View/4570" title="Descarga una Boleta Electoral de Muestra" target="_blank" onclick="trackOutboundLink('http://www.bexar.org/DocumentCenter/View/4570',true,'Download Sample Ballot');">Descargar Muestra de Boleta Electoral</a></li> -->
-					<!-- </ul> -->
-
-
-					<!-- <h4 class="uppercase text-mid-gray text-sm"><i class="fa fa-rocket" aria-hidden="true"></i> HACER</h4> -->
-					<ul class="unstyled">
-						<li><a href="http://www.votetexas.gov/?page_id=548" title="Lleva Esto Contigo para Votar" target="_blank" onclick="trackOutboundLink('http://www.votetexas.gov/?page_id=548',true,'Bring these with you to vote');">Lleva Esto Contigo para Votar</a></li>
-						<!-- <li><a href="https://webservices.sos.state.tx.us/vrapp/index.asp" title="Regístrate: Descarga e Imprime la Solicitud que se Enviará por Correo – tienes hasta el 6 de Abril" target="_blank" onclick="trackOutboundLink('https://webservices.sos.state.tx.us/vrapp/index.asp',true,'Registration Application');">Regístrate: Descarga e Imprime la Solicitud que se Enviará por Correo – tienes hasta el 6 de Abril</a></li> -->
-						<li><a href="https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio" title="Comprueba Tu Registro" target="_blank" onclick="trackOutboundLink('https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio',true,'Check Your Registration');">Comprueba Tu Registro</a></li>
-						<li><a href="http://www.saspeakup.com/" title="Expresa Tus Prioridades de Presupuesto de la Ciudad de San Antonio para el 2017 y Habla Fuerte SA" target="_blank" onclick="trackOutboundLink('http://www.saspeakup.com/',true,'Voice Your 2018 City of San Antonio Budget Priorities');">Expresa Tus Prioridades de Presupuesto de la Ciudad de San Antonio para el 2018 y Habla Fuerte SA</a></li>
-					</ul>
-				</div>
-				
-				<hr />
-
 				<h3>Mapa del Distrito {{ page.title }}</h3>				
 				{% assign largerMapLink = site.data.stats[page.district]['map'] %}
 
@@ -382,6 +180,20 @@ layout: default
 					<img class="responsive map-thumb" src="{{ site.data.stats[page.district]['map-thumb'] }}" />
 				</a>
 				<p class="text-sm"><a href="{{ largerMapLink }}" target="_blank" title="Ver PDF Más Grande" onclick="trackOutboundLink('{{ largerMapLink }}',true,'District {{ page.district }} Map');">Ver PDF Más Grande >></a></p>
+				
+				<hr />
+
+				<h3 class="">Mantente Involucrado</h3>
+				<div class="resources-list">
+				
+					<ul class="unstyled">
+						<li><a href="https://webservices.sos.state.tx.us/vrapp/index.asp" title="Regístrate para votar" target="_blank" onclick="trackOutboundLink('https://webservices.sos.state.tx.us/vrapp/index.asp',true,'Registration Application');">Regístrate para votar</a></li>
+						<li><a href="https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio" title="Comprueba Tu Registro" target="_blank" onclick="trackOutboundLink('https://www.bexar.org/2229/Voter-Registration-Check-Polling-Locatio',true,'Check Your Registration');">Comprueba Tu Registro</a></li>
+						<li><a href="http://www.saspeakup.com/" title="Expresa Tus Prioridades de Presupuesto de la Ciudad de San Antonio para el 2017 y Habla Fuerte SA" target="_blank" onclick="trackOutboundLink('http://www.saspeakup.com/',true,'Voice Your 2018 City of San Antonio Budget Priorities');">Expresa Tus Prioridades de Presupuesto de la Ciudad de San Antonio para el 2018 y Habla Fuerte SA</a></li>
+						<li><a href="http://www.satomorrow.com/" title="SA Tomorrow" target="_blank" onclick="trackOutboundLink('http://www.satomorrow.com/',true,'Learn more about san antonios plans to address growth');">Aprende más sobre los planes de San Antonio para afrontar el crecimiento</a></li>
+					</ul>
+				</div>
+				
 
 			</div>
 		</div>
@@ -389,9 +201,11 @@ layout: default
 	</div>
 </section>
 
+<hr />
+
 {% include newsletter.html %}
 
-<section class="faq-cta bg-sa-dark-aqua section-tight">
+<!-- <section class="faq-cta bg-sa-dark-aqua section-tight">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3 text-center">
@@ -400,5 +214,5 @@ layout: default
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 

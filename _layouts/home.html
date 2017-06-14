@@ -8,45 +8,124 @@ layout: default
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-md-offset-1 text-center">
-          <p class="h1 uppercase hero-header text-sa-white">¡Gente, estamos en una segunda vuelta!</p>
+          <p class="h1 uppercase hero-header text-sa-white">Los resultados están listos.</p>
           <div class="spacer-sm"></div>
           <!-- Button trigger modal -->
-          <p class="text-lg text-sa-white">¡San Antonio necesita tu voz, ahora más que nunca!</p>
-          <button class="btn btn-lg btn-sa-dark-aqua" data-toggle="modal" data-target="#start-here-modal" onclick="trackInboundLink('Modal','Start Here');">Comienza Aquí</button>
+          <p class="text-lg text-sa-white">Elección Municipal de San Antonio 2017</p>
+          <!-- <button class="btn btn-lg btn-sa-dark-aqua" data-toggle="modal" data-target="#start-here-modal" onclick="trackInboundLink('Modal','Start Here');">Comienza Aquí</button> -->
         </div>
       </div>
     </div>
   </section>
 
-  <section class="home-options">
+  <section class="section-tight">
     <div class="container">
-      <div class="row options-container">
-        <div class="col-md-6 option">
-          <h3 class="">¿Qué es una segunda vuelta?</h3>
-          <p>
-          Cuando ningún candidato recibe una mayoría (50% +1 voto), la contienda pasa a una segunda vuelta electoral entre los 2 candidatos principales. <strong>¡Puedes votar en la segunda vuelta incluso si no votaste en la elección de mayo!</strong>
-          </p>
-          
-          <div class="spacer-sm"></div>
-                    
-          <h3>¿Quién está en la segunda vuelta?</h3>
-          <p>El alcalde y los distritos del Consejo Municipal 1, 2, 6, 8, 9 y 10, todos estos están en una segunda vuelta. Incluso aunque el representante del consejo municipal haya sido elegido, todavía tienes que votar por el alcalde. Nos referimos a ustedes, distritos 3, 4, 5 y 7.</p>
-          <p class="uppercase"><a href="http://www.sanantonio.gov/Council/Find-My-Council-Member" title="COMPRUEBA TU DISTRITO" target="_blank" onclick="trackOutboundLink('http://www.sanantonio.gov/Council/Find-My-Council-Member', true, 'Check Your District');"><strong>COMPRUEBA TU DISTRITO ></strong></a></p>
-          <p class="uppercase"><a href="#" title="CONOZCO MI DISTRITO" class="uppercase toggle-off-canvas-nav"><strong>CONOZCO MI DISTRITO ></strong></a></p>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h2 class="text-center">Alcalde</h2>
+          <div class="option-box option-box--candidate results-mayor">
+            <div class="row">
+              <div class="col-sm-5">
+                <img class="responsive" src="/img/candidates/Mayor_Nirenberg.jpeg" alt="Ron Nirenburg Photo" />
+              </div>
+              <div class="col-sm-5 col-md-7">
+                <h4 class="results-mayor-name">Ron Nirenberg</h4>
+                <p class="progress-title text-xsm">Resultados de la Segunda Vuelta: 54,010 votos</p>
+                <div class="progress">
+                  <div class="progress-bar bg-sa-dark-aqua" role="progressbar" aria-valuenow="54.59" aria-valuemin="0" aria-valuemax="100" style="width: 54.59%;">
+                      54.59%
+                  </div>
+                </div>
+                <!-- <div class="">
+                  <a class="text-sm underline" target="_blank" href="" title="view website" onclick="trackOutboundLink('', true, '{{ candidate.name }} Website');">Website</a>
+                  | <a class="text-sm underline" target="_blank" href="" title="view filing document" onclick="trackOutboundLink('', true, ' Filing');">Filing Document</a>
+                </div> -->
+                <div class="social-icons">
+                  <a class="text-xl" target="_blank" href="https://www.facebook.com/nirenberg/" title="view facebook page" onclick="trackOutboundLink('https://www.facebook.com/nirenberg/', true, ' Facebook');"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                  <a class="text-xl" target="_blank" href="https://twitter.com/Ron_Nirenberg" title="view twitter page" onclick="trackOutboundLink('https://twitter.com/Ron_Nirenberg', true, ' Twitter');"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                  <a class="text-xl" target="_blank" href="https://www.instagram.com/ron_nirenberg/" title="view instagram" onclick="trackOutboundLink('https://www.instagram.com/ron_nirenberg/', true, ' Instagram');"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
         </div>
-          
-        <div class="col-md-6 option">
-          <h3>Votar</h3>
-          <p>El proceso de elección para una segunda vuelta es el mismo que el de la elección general. La votación anticipada será del 30 de mayo al 6 de junio. El Día de la Elección es el 10 de junio. ¡Encuentra tu centro de votación más cercano y vota! ¡San Antonio te necesita!</p>
-          <p class="uppercase"><a href="https://www.bexar.org/2231/Who-represents-me-Search" title="Early voting locations list" target="_blank" onclick="trackOutboundLink('https://www.bexar.org/2231/Who-represents-me-Search', true, 'Find your precinct');"><strong>TU DISTRITO ELECTORAL &amp; CENTRO DE VOTACIÓN ></strong></a></p>
-          <p class="uppercase"><a href="https://www.sos.state.tx.us/elections/voter/reqabbm.shtml" title="Early voting locations list" target="_blank" onclick="trackOutboundLink('https://www.sos.state.tx.us/elections/voter/reqabbm.shtml', true, 'Mail-in Ballot Application');"><strong>SOLICITUD PARA BOLETA ENVIADA POR CORREO ></strong></a></p>
-          
-          <a class="btn btn-sm btn-sa-dark-aqua" href="/faq/" title="frequently asked questions">Preguntas Frequentes</a>
-
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="spacer-sm"></div>
+          <h2 class="text-center">Miembros del Consejo Municipal</h2>
+          <div class="row">
+            <div class="results-cc col-md-2 col-sm-4 col-xs-6">
+              <img class="responsive candidate-results" src="/img/candidates/D1_Trevino.jpeg" alt="Roberto Trevino Photo" />
+              <h4 class="has-subtitle">Roberto C. Treviño</h4>
+              <p class="has-subtitle">Distrito 1</p>
+              <p><a href="/distrito-1/">Saber Más</a></p>
+            </div>
+            <div class="results-cc col-md-2 col-sm-4 col-xs-6">
+              <img class="responsive candidate-results" src="/img/candidates/D2_Shaw.jpeg" alt="no photo provided" />
+              <h4 class="has-subtitle">William "Cruz" Shaw</h4>
+              <p class="has-subtitle">Distrito 2</p>
+              <p><a href="/distrito-2/">Saber Más</a></p>
+            </div>
+            <div class="results-cc col-md-2 col-sm-4 col-xs-6">
+              <img class="responsive candidate-results" src="/img/candidates/D3_Viagran.jpeg" alt="Rebecca Viagran Photo" />
+              <h4 class="has-subtitle">Rebecca J. Viagran</h4>
+              <p class="has-subtitle">Distrito 3</p>
+              <p><a href="/distrito-3/">Saber Más</a></p>
+            </div>
+            <div class="results-cc col-md-2 col-sm-4 col-xs-6">
+              <img class="responsive candidate-results" src="/img/candidates/D4_Saldana.jpeg" alt="Rey Saldaña Photo" />
+              <h4 class="has-subtitle">Rey Saldaña</h4>
+              <p class="has-subtitle">Distrito 4</p>
+              <p><a href="/distrito-4/">Saber Más</a></p>
+            </div>
+            <div class="results-cc col-md-2 col-sm-4 col-xs-6">
+              <img class="responsive candidate-results" src="/img/candidates/D5_Gonzales.jpeg" alt="Shirley Gonzales Photo" />
+              <h4 class="has-subtitle">Shirley Gonzales</h4>
+              <p class="has-subtitle">Distrito 5</p>
+              <p><a href="/distrito-5/">Saber Más</a></p>
+            </div>
+            <div class="results-cc col-md-2 col-sm-4 col-xs-6">
+              <img class="responsive candidate-results" src="/img/candidates/D6_Brockhouse.png" alt="Greg Brockhouse Photo" />
+              <h4 class="has-subtitle">Greg Brockhouse</h4>
+              <p class="has-subtitle">Distrito 6</p>
+              <p><a href="/distrito-6/">Saber Más</a></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="results-cc col-md-2 col-sm-4 col-xs-6">
+              <img class="responsive candidate-results" src="/img/candidates/D7_Sandoval.jpeg" alt="Ana Sandoval Photo" />
+              <h4 class="has-subtitle">Ana Sandoval</h4>
+              <p class="has-subtitle">Distrito 7</p>
+              <p><a href="/distrito-7/">Saber Más</a></p>
+            </div>
+            <div class="results-cc col-md-2 col-sm-4 col-xs-6">
+              <img class="responsive candidate-results" src="/img/candidates/D8_Palaez.jpeg" alt="Manny Pelaez Photo" />
+              <h4 class="has-subtitle">Manny Pelaez</h4>
+              <p class="has-subtitle">Distrito 8</p>
+              <p><a href="/distrito-8/">Saber Más</a></p>
+            </div>
+            <div class="results-cc col-md-2 col-sm-4 col-xs-6">
+              <img class="responsive candidate-results" src="/img/candidates/D9_Courage.jpeg" alt="John Courage Photo" />
+              <h4 class="has-subtitle">John Courage</h4>
+              <p class="has-subtitle">Distrito 9</p>
+              <p><a href="/distrito-9/">Saber Más</a></p>
+            </div>
+            <div class="results-cc col-md-2 col-sm-4 col-xs-6">
+              <img class="responsive candidate-results" src="/img/candidates/D10_Perry.jpeg" alt="Clayton Perry Photo" />
+              <h4 class="has-subtitle">Clayton Perry</h4>
+              <p class="has-subtitle">Distrito 10</p>
+              <p><a href="/distrito-10/">Saber Más</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  <hr />
+
+  {% include newsletter.html %}
 
   <section class="has-bg-img bg-color-overlay-light-gray" style="background-image: url(/img/maps/bg-map-zoom.png)">
     <div class="container">
@@ -58,20 +137,20 @@ layout: default
       <div class="row">
         <div class="col-md-3 col-sm-6">
           <div class="number-box bg-tertiary">
-            <p class="number-box--number text-sa-white">El 11.3%</p>
-            <p class="number-box--description text-sa-white">de los votantes votó realmente en 2017</p>
+            <p class="number-box--number text-sa-white">El 13.1%</p>
+            <p class="number-box--description text-sa-white">de los votantes votó realmente en la elección de junio</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="number-box bg-tertiary">
-            <p class="number-box--number text-sa-white">1M+</p>
-            <p class="number-box--description text-sa-white">Total de votantes registrados en mayo de 2017 en el Condado de Bexar</p>
+            <p class="number-box--number text-sa-white">754,462</p>
+            <p class="number-box--description text-sa-white">Total de votantes registrados en junio de 2017 en San Antonio</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="number-box bg-tertiary">
-            <p class="number-box--number text-sa-white">116,212</p>
-            <p class="number-box--description text-sa-white">Número total de votantes en la elección de mayo de 2017</p>
+            <p class="number-box--number text-sa-white">99,237</p>
+            <p class="number-box--description text-sa-white">Número total de votantes en la elección de junio de 2017</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
@@ -89,7 +168,6 @@ layout: default
     </div>
   </section>
 
-  {% include newsletter.html %}
 
   <section>
     <div class="container">

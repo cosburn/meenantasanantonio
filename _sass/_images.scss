@@ -10,6 +10,10 @@
 	position: absolute;
 }
 
+.candidate-results {
+	padding: 15px 0;
+}
+
 .box-shadow {
 	@include box-shadow();
 }
